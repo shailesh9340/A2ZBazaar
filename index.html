@@ -1,1 +1,35 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A2ZBazaar - Best Deals</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>A2ZBazaar</h1>
+        <p>Premium Quality & Stylish Outfits</p>
+    </header>
 
+    <div class="container" id="productList">
+        <p>सामान लोड हो रहा है...</p>
+    </div>
+
+    <div id="orderModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeForm()">&times;</span>
+            <h3>ऑर्डर की जानकारी भरें</h3>
+            <form id="orderForm">
+                <input type="hidden" id="p_name" name="product">
+                <input type="text" name="name" placeholder="आपका पूरा नाम" required>
+                <input type="tel" name="phone" placeholder="WhatsApp नंबर" required>
+                <textarea name="address" placeholder="पूरा पता (House No, Area, PIN)" required></textarea>
+                <button type="submit" id="submitBtn">ऑर्डर कन्फर्म करें</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
