@@ -1,1 +1,20 @@
+* { box-sizing: border-box; font-family: sans-serif; margin: 0; padding: 0; }
+body { background: #f4f4f4; padding-bottom: 50px; }
+header { background: #232f3e; color: white; text-align: center; padding: 25px; margin-bottom: 20px; }
+
+.product-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 10px; }
+.card { background: white; width: 170px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); overflow: hidden; text-align: center; padding-bottom: 10px; }
+.card img { width: 100%; height: 180px; object-fit: cover; }
+.card h3 { font-size: 14px; margin: 10px 5px; color: #333; }
+.price { color: #B12704; font-size: 18px; font-weight: bold; }
+.old-price { text-decoration: line-through; color: #777; font-size: 12px; margin-left: 5px; }
+
+.buy-btn { background: #ffd814; border: 1px solid #fcd200; padding: 8px; width: 90%; border-radius: 5px; cursor: pointer; margin-top: 10px; font-weight: bold; }
+
+/* Modal Styles */
+.modal { display: none; position: fixed; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 10; }
+.modal-content { background: white; width: 90%; max-width: 400px; margin: 50px auto; padding: 20px; border-radius: 10px; position: relative; }
+input, textarea { width: 100%; margin: 10px 0; padding: 12px; border: 1px solid #ccc; border-radius: 5px; }
+#submitBtn { background: #27ae60; color: white; border: none; cursor: pointer; }
+.close { position: absolute; right: 15px; top: 10px; font-size: 24px; cursor: pointer; }
 
